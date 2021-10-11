@@ -1,0 +1,35 @@
+
+<router-outlet></router-outlet>
+<div class="container">
+    <div>
+    <h2>Ajouter un Article</h2>
+    </div>
+
+<form>
+
+        <div class="form-group">
+          <label >Description</label>
+          <input type="text" class="form-control" name="Titrearticle" [(ngModel)]="newArticle.Titre">
+        </div>
+
+            <div class="form-group">
+              <label>categorie</label>
+              <input type="text" class="form-control"name="Descriptionaricle"  [(ngModel)]="newArticle.Description">
+            </div>
+  
+                <div class="form-group">
+                  <label >Date</label>
+                  <input type="text"  name="categoriearicle" class="form-control" [(ngModel)]="newArticle.categorie">
+                </div>
+                <div class="form-group">
+                    <label >Date</label>
+                    <input type="text" class="form-control" name="Datearicle" [(ngModel)]="newArticle.Date">
+                  </div>
+                  <div class="container fluid">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit" (click)="addarticle()">ajouter</button>
+                   
+                  </div>
+                </div>
+                  </form>
+                  </div>

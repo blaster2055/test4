@@ -1,0 +1,24 @@
+
+<div class="container">
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Titre </th>
+      <th scope="col">Description </th>
+      <th scope="col">categorie </th>
+      <th scope="col">Date</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let article of articles">
+    <tr>
+      <td>{{article.Titre}}</td>
+      <td>{{article.Description}}</td>
+      <td>{{article.categorie}}</td>
+      <td>{{article.Date}}</td>
+      <td><button class="btn btn-primary" type="submit"(click)="suprimerArticle(article)">supprimer</button></td>
+      <td><a class="btn btn-primary" routerLinkActive="active"  [routerLink]="['/updatepost']" >Modifier</a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>
